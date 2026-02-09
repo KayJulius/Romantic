@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Untuk Gladys</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #ffe6ec;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+    header {
+      background: #ff8fab;
+      color: white;
+      padding: 40px 20px;
+    }
+    section {
+      padding: 30px 20px;
+    }
+    .card {
+      background: white;
+      margin: 20px auto;
+      padding: 20px;
+      max-width: 600px;
+      border-radius: 10px;
+    }
+    button {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 8px;
+      background: #ff5d8f;
+      color: white;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Untuk Gladys</h1>
+  <p>Sebuah halaman kecil, dengan perasaan yang serius.</p>
+</header>
+
+<section>
+  <div class="card">
+    <h2>Cerita Singkat</h2>
+    <p>Di sini kamu bisa tulis cerita kenal kalian, kenangan kecil, atau hal simpel tapi berarti.</p>
+  </div>
+
+  <div class="card">
+    <h2>Pesan Buat Kamu</h2>
+    <p id="pesan">Klik tombol di bawah ya.</p>
+    <button onclick="showMessage()">Klik</button>
+  </div>
+</section>
+
+<script>
+  function showMessage() {
+    document.getElementById("pesan").innerText = 
+      "Gladys, makasih sudah jadi bagian penting di hidupku. Aku harap kita bisa terus jalan bareng.";
+  }
+</script>
+
+</body>
+</html>
